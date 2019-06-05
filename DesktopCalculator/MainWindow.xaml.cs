@@ -135,11 +135,12 @@ namespace DesktopCalculator
             }
         }
 
-        private void Square_Click(object sender, RoutedEventArgs e)
+        private void Power_Click(object sender, RoutedEventArgs e)
         {
             if (Result.Text.EndsWith("0") || Result.Text.EndsWith("1") || Result.Text.EndsWith("2") || Result.Text.EndsWith("3") || Result.Text.EndsWith("4") || Result.Text.EndsWith("5") || Result.Text.EndsWith("6") || Result.Text.EndsWith("7") || Result.Text.EndsWith("8") || Result.Text.EndsWith("9"))
             {
-                Result.Text = Math.Pow(Convert.ToDouble(Result.Text), 2).ToString();
+                //Result.Text = Math.Pow(Convert.ToDouble(Result.Text), 2).ToString();
+                Result.Text += "^";
             }
         }
 
