@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="539.5" Width="352.5">
+        Title="MainWindow" Height="417.5" Width="352.5">
     <Window.Resources>
         <Style x:Key="RoundButtonTemplate" TargetType="Button">
             <Setter Property="Background" Value="Brown"/>
@@ -25,30 +25,31 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Button x:Name="Seven" ToolTip="7" Content="7" HorizontalAlignment="Left" Margin="0,180,0,0" VerticalAlignment="Top" Width="112" Height="44" FontSize="22" Click="Seven_Click"/>
-        <Button x:Name="One" ToolTip="1" Content="1" HorizontalAlignment="Left" Margin="0,82,0,0" VerticalAlignment="Top" Width="112" Height="44" FontSize="22" Click="One_Click" RenderTransformOrigin="0.466,-1.5"/>
-        <Button x:Name="Sign" ToolTip="positive/negative" Content="+/-" HorizontalAlignment="Left" Margin="0,229,0,0" VerticalAlignment="Top" Width="112" Height="44" FontSize="22" Click="Sign_Click" Background="#FF7CCAEE"/>
-        <Button x:Name="Factorial" ToolTip="factorial" Style="{StaticResource RoundButtonTemplate}" Content="x!" HorizontalAlignment="Left" Margin="0,376,0,0" VerticalAlignment="Top" Width="68" Height="44" FontSize="22" RenderTransformOrigin="0.554,3.466" Click="Factorial_Click" Background="#FFFF5506"/>
-        <Button x:Name="Eight" ToolTip="8" Content="8" HorizontalAlignment="Left" Margin="112,180,0,0" VerticalAlignment="Top" Width="114" Height="44" FontSize="22" Click="Eight_Click"/>
-        <Button x:Name="Five" Content="5" ToolTip="5" HorizontalAlignment="Left" Margin="112,131,0,0" VerticalAlignment="Top" Width="114" Height="44" FontSize="22" Click="Five_Click"/>
-        <Button x:Name="Two" Content="2" ToolTip="2" HorizontalAlignment="Left" Margin="112,82,0,0" VerticalAlignment="Top" Width="114" Height="44" FontSize="22" Click="Two_Click"/>
-        <Button x:Name="Zero" Content="0" ToolTip="0" HorizontalAlignment="Left" Margin="112,229,0,0" VerticalAlignment="Top" Width="112" Height="44" FontSize="22" RenderTransformOrigin="1.083,2.511" Click="Zero_Click"/>
-        <Button x:Name="Minus" ToolTip="subtract" Style="{StaticResource RoundButtonTemplate}" Content="-" HorizontalAlignment="Left" Margin="86,278,0,0" VerticalAlignment="Top" Width="68" Height="44" FontSize="22" Click="Minus_Click" Background="#FF10A6EC"/>
-        <Button x:Name="Divide" ToolTip="divide" Style="{StaticResource RoundButtonTemplate}" Content="÷" HorizontalAlignment="Left" Margin="268,278,0,0" VerticalAlignment="Top" Width="68" Height="44" FontSize="22" Click="Divide_Click" Background="#FF10A6EC"/>
-        <Button x:Name="Six" Content="6" ToolTip="6" HorizontalAlignment="Left" Margin="224,131,0,0" VerticalAlignment="Top" Width="114" Height="44" FontSize="22" Click="Six_Click"/>
-        <Button x:Name="Four" Content="4" ToolTip="4" HorizontalAlignment="Left" Margin="0,131,0,0" VerticalAlignment="Top" Width="112" Height="44" FontSize="22" Click="Four_Click"/>
-        <Button x:Name="Nine" Content="9" ToolTip="9" HorizontalAlignment="Left" Margin="224,180,0,0" VerticalAlignment="Top" Width="114" Height="44" FontSize="22" Click="Nine_Click"/>
-        <Button x:Name="Three" Content="3" ToolTip="3" HorizontalAlignment="Left" Margin="226,82,0,0" VerticalAlignment="Top" Width="112" Height="44" FontSize="22" Click="Three_Click"/>
-        <Button x:Name="Equal" Content="=" ToolTip="calculate" HorizontalAlignment="Left" Margin="124,327,0,0" VerticalAlignment="Top" Width="202" Height="44" FontSize="22" Click="Equal_Click" Background="#FF4CEC28"/>
-        <Button x:Name="Plus" ToolTip="add" Style="{StaticResource RoundButtonTemplate}" Content="+" HorizontalAlignment="Left" Margin="0,278,0,0" VerticalAlignment="Top" Width="68" Height="44" FontSize="22" Click="Plus_Click" Background="#FF10A6EC"/>
-        <Button x:Name="Multiply" ToolTip="multiply" Style="{StaticResource RoundButtonTemplate}" Content="×" HorizontalAlignment="Left" Margin="180,278,0,0" VerticalAlignment="Top" Width="68" Height="44" FontSize="22" Click="Multiply_Click" Background="#FF10A6EC"/>
-        <Button x:Name="Modulus" ToolTip="modulus" Style="{StaticResource RoundButtonTemplate}" Content="mod" HorizontalAlignment="Left" Margin="268,376,0,0" VerticalAlignment="Top" Width="68" Height="44" RenderTransformOrigin="0.436,1.739" FontSize="22" Click="Modulus_Click" Background="#FFFF5506"/>
-        <Button x:Name="SquareRoot" ToolTip="square root" Style="{StaticResource RoundButtonTemplate}" Content="√x" HorizontalAlignment="Left" Margin="180,376,0,0" VerticalAlignment="Top" Width="68" Height="44" RenderTransformOrigin="0.436,1.739" FontSize="22" Click="SquareRoot_Click"/>
-        <Button x:Name="Power" ToolTip="power" Style="{StaticResource RoundButtonTemplate}" Content="xⁿ" HorizontalAlignment="Left" Margin="86,376,0,0" VerticalAlignment="Top" Width="68" Height="44" RenderTransformOrigin="0.436,1.739" FontSize="22" Click="Power_Click"/>
-        <Button x:Name="Clear" ToolTip="Clear all" Content="C" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Width="58" Height="44" RenderTransformOrigin="0.436,1.739" FontSize="22" FontFamily="Segoe UI Semibold" Click="Clear_Click" Background="#FFB21010"/>
-        <Label Content="&#x9;&#x9;  CALCULATOR" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="338" Background="#FF243027" Foreground="#FFF9F9F9" FontSize="14"/>
-        <TextBox x:Name="Result" HorizontalAlignment="Left" Height="44" Margin="86,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" FontSize="25"/>
-        <Button x:Name="point"  ToolTip="decimal" Content="." HorizontalAlignment="Left" Margin="224,229,0,0" VerticalAlignment="Top" Width="112" Height="44" RenderTransformOrigin="0.436,1.739" FontSize="22" Click="Point_Click" Background="#FF7CCAEE"/>
+        <Button x:Name="Seven" ToolTip="7" Content="7" HorizontalAlignment="Left" Margin="0,165,0,0" VerticalAlignment="Top" Width="112" Height="44" FontSize="22" Click="Seven_Click"/>
+        <Button x:Name="One" ToolTip="1" Content="1" HorizontalAlignment="Left" Margin="0,77,0,0" VerticalAlignment="Top" Width="112" Height="44" FontSize="22" Click="One_Click" RenderTransformOrigin="0.466,-1.5"/>
+        <Button x:Name="Sign" ToolTip="positive/negative" Content="+/-" HorizontalAlignment="Left" Margin="0,209,0,0" VerticalAlignment="Top" Width="112" Height="44" FontSize="22" Click="Sign_Click" Background="#FF7CCAEE"/>
+        <Button x:Name="Factorial" ToolTip="factorial" Style="{StaticResource RoundButtonTemplate}" Content="x!" HorizontalAlignment="Left" Margin="0,341,0,0" VerticalAlignment="Top" Width="68" Height="44" FontSize="22" RenderTransformOrigin="0.554,3.466" Click="Factorial_Click" Background="#FFFF5506"/>
+        <Button x:Name="Eight" ToolTip="8" Content="8" HorizontalAlignment="Left" Margin="112,165,0,0" VerticalAlignment="Top" Width="114" Height="44" FontSize="22" Click="Eight_Click"/>
+        <Button x:Name="Five" Content="5" ToolTip="5" HorizontalAlignment="Left" Margin="112,121,0,0" VerticalAlignment="Top" Width="114" Height="44" FontSize="22" Click="Five_Click"/>
+        <Button x:Name="Two" Content="2" ToolTip="2" HorizontalAlignment="Left" Margin="112,77,0,0" VerticalAlignment="Top" Width="114" Height="44" FontSize="22" Click="Two_Click"/>
+        <Button x:Name="Zero" Content="0" ToolTip="0" HorizontalAlignment="Left" Margin="112,209,0,0" VerticalAlignment="Top" Width="114" Height="44" FontSize="22" RenderTransformOrigin="1.083,2.511" Click="Zero_Click"/>
+        <Button x:Name="Minus" ToolTip="subtract" Style="{StaticResource RoundButtonTemplate}" Content="-" HorizontalAlignment="Left" Margin="86,253,0,0" VerticalAlignment="Top" Width="68" Height="44" FontSize="22" Click="Minus_Click" Background="#FF10A6EC"/>
+        <Button x:Name="Divide" ToolTip="divide" Style="{StaticResource RoundButtonTemplate}" Content="÷" HorizontalAlignment="Left" Margin="270,253,0,0" VerticalAlignment="Top" Width="68" Height="44" FontSize="22" Click="Divide_Click" Background="#FF10A6EC" RenderTransformOrigin="0.434,-0.182"/>
+        <Button x:Name="Six" Content="6" ToolTip="6" HorizontalAlignment="Left" Margin="226,121,0,0" VerticalAlignment="Top" Width="114" Height="44" FontSize="22" Click="Six_Click"/>
+        <Button x:Name="Four" Content="4" ToolTip="4" HorizontalAlignment="Left" Margin="0,121,0,0" VerticalAlignment="Top" Width="112" Height="44" FontSize="22" Click="Four_Click"/>
+        <Button x:Name="Nine" Content="9" ToolTip="9" HorizontalAlignment="Left" Margin="226,165,0,0" VerticalAlignment="Top" Width="114" Height="44" FontSize="22" Click="Nine_Click"/>
+        <Button x:Name="Three" Content="3" ToolTip="3" HorizontalAlignment="Left" Margin="226,77,0,0" VerticalAlignment="Top" Width="112" Height="44" FontSize="22" Click="Three_Click"/>
+        <Button x:Name="Equal" Content="=" ToolTip="calculate" HorizontalAlignment="Left" Margin="180,302,0,0" VerticalAlignment="Top" Width="158" Height="39" FontSize="22" Click="Equal_Click" Background="#FF4CEC28"/>
+        <Button x:Name="Plus" ToolTip="add" Style="{StaticResource RoundButtonTemplate}" Content="+" HorizontalAlignment="Left" Margin="0,253,0,0" VerticalAlignment="Top" Width="68" Height="44" FontSize="22" Click="Plus_Click" Background="#FF10A6EC"/>
+        <Button x:Name="Multiply" ToolTip="multiply" Style="{StaticResource RoundButtonTemplate}" Content="×" HorizontalAlignment="Left" Margin="180,253,0,0" VerticalAlignment="Top" Width="68" Height="44" FontSize="22" Click="Multiply_Click" Background="#FF10A6EC"/>
+        <Button x:Name="Modulus" ToolTip="modulus" Style="{StaticResource RoundButtonTemplate}" Content="mod" HorizontalAlignment="Left" Margin="86,341,0,0" VerticalAlignment="Top" Width="68" Height="44" RenderTransformOrigin="0.436,1.739" FontSize="22" Click="Modulus_Click" Background="#FFFF5506"/>
+        <Button x:Name="SquareRoot" ToolTip="square root" Style="{StaticResource RoundButtonTemplate}" Content="√x" HorizontalAlignment="Left" Margin="86,297,0,0" VerticalAlignment="Top" Width="68" Height="44" RenderTransformOrigin="0.436,1.739" FontSize="22" Click="SquareRoot_Click"/>
+        <Button x:Name="Power" ToolTip="power" Style="{StaticResource RoundButtonTemplate}" Content="xⁿ" HorizontalAlignment="Left" Margin="0,297,0,0" VerticalAlignment="Top" Width="68" Height="44" RenderTransformOrigin="0.436,1.739" FontSize="22" Click="Power_Click"/>
+        <Button x:Name="Clear" Style="{StaticResource RoundButtonTemplate}" ToolTip="Clear all" Content="C" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="58" Height="44" RenderTransformOrigin="0.436,1.739" FontSize="22" FontFamily="Segoe UI Semibold" Click="Clear_Click" Background="#FFB21010"/>
+        <Label Content="&#x9;&#x9;  CALCULATOR" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="344" Background="#FF243027" Foreground="#FFF9F9F9" FontSize="14"/>
+        <TextBox x:Name="Result" HorizontalAlignment="Left" Height="44" Margin="86,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" FontSize="25"/>
+        <Button x:Name="point"  ToolTip="decimal" Content="." HorizontalAlignment="Left" Margin="226,209,0,0" VerticalAlignment="Top" Width="112" Height="44" RenderTransformOrigin="0.436,1.739" FontSize="22" Click="Point_Click" Background="#FF7CCAEE"/>
+        <Button x:Name="Conversions" Content="Conversions &gt;&gt;" HorizontalAlignment="Left" Margin="180,346,0,0" VerticalAlignment="Top" Width="158" Click="Conversions_Click" Height="39"/>
 
     </Grid>
 </Window>

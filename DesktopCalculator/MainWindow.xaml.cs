@@ -151,5 +151,11 @@ namespace DesktopCalculator
                 Result.Text += ".";
             }
         }
+
+        private void Conversions_Click(object sender, RoutedEventArgs e)
+        {
+            Conversions conversion = new Conversions();
+            conversion.Show();
+        }
     }
 }
