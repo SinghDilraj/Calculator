@@ -84,7 +84,7 @@ namespace DesktopCalculator
             {
                 DataTable dt = new DataTable();
                 Result.Text = dt.Compute(Result.Text.Trim(), "").ToString();
-                Result.Text = (Convert.ToInt32(Result.Text) * -1).ToString();
+                Result.Text = (Convert.ToDecimal(Result.Text) * -1).ToString();
             }
         }
 
