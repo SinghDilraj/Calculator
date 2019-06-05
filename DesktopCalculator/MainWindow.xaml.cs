@@ -84,14 +84,14 @@ namespace DesktopCalculator
             {
                 DataTable dt = new DataTable();
                 Result.Text = dt.Compute(Result.Text.Trim(), "").ToString();
-                Result.Text = (Convert.ToDecimal(Result.Text) * -1).ToString();
+                Result.Text = (Convert.ToDouble(Result.Text) * -1).ToString();
             }
         }
 
         private void Factorial_Click(object sender, RoutedEventArgs e)
         {
             int fact = 1;
-            for (int i = 1; i <= Convert.ToInt32(Result.Text); i++)
+            for (int i = 1; i <= Convert.ToDouble(Result.Text); i++)
             {
                 fact = fact * i;
             }
