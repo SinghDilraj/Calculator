@@ -109,11 +109,6 @@ namespace DesktopCalculator
             Result.Text += "+";
         }
 
-        private void Percent_Click(object sender, RoutedEventArgs e)
-        {
-            Result.Text += "0";
-        }
-
         private void Divide_Click(object sender, RoutedEventArgs e)
         {
             Result.Text += "/";
