@@ -23,7 +23,7 @@ namespace DesktopCalculator
                 decimal kg = System.Convert.ToDecimal(Kilograms.Text);
                 Grams.Text = (kg * 1000).ToString();
                 Miligrams.Text = (kg * 1000000).ToString();
-                Pounds.Text = (kg * 2.20462m).ToString();
+                Pounds.Text = (kg * 2.205m).ToString();
                 Ounces.Text = (kg * 35.274m).ToString();
 
                 Empty = true;
@@ -33,10 +33,10 @@ namespace DesktopCalculator
                 Empty = false;
 
                 decimal g = System.Convert.ToDecimal(Grams.Text);
-                Kilograms.Text = (g * 0.001m).ToString();
+                Kilograms.Text = (g / 1000).ToString();
                 Miligrams.Text = (g * 1000).ToString();
-                Pounds.Text = (g * 0.0022046m).ToString();
-                Ounces.Text = (g * 0.035274m).ToString();
+                Pounds.Text = (g / 453.592m).ToString();
+                Ounces.Text = (g / 28.35m).ToString();
 
                 Empty = true;
             }
@@ -45,10 +45,10 @@ namespace DesktopCalculator
                 Empty = false;
 
                 decimal mg = System.Convert.ToDecimal(Miligrams.Text);
-                Kilograms.Text = (mg * 0.000001m).ToString();
-                Grams.Text = (mg * 0.001m).ToString();
-                Pounds.Text = (mg * 0.0000022046m).ToString();
-                Ounces.Text = (mg * 0.000035274m).ToString();
+                Kilograms.Text = (mg / 1000000).ToString();
+                Grams.Text = (mg / 1000).ToString();
+                Pounds.Text = (mg / 453592.37m).ToString();
+                Ounces.Text = (mg / 28349.523m).ToString();
 
                 Empty = true;
             }
@@ -57,10 +57,10 @@ namespace DesktopCalculator
                 Empty = false;
 
                 decimal p = System.Convert.ToDecimal(Pounds.Text);
-                Kilograms.Text = (p * 0.453592m).ToString();
+                Kilograms.Text = (p / 2.205m).ToString();
                 Grams.Text = (p * 453.592m).ToString();
-                Miligrams.Text = (p * 453592m).ToString();
-                Ounces.Text = (p * 16m).ToString();
+                Miligrams.Text = (p * 453592.37m).ToString();
+                Ounces.Text = (p * 16).ToString();
 
                 Empty = true;
             }
@@ -69,10 +69,10 @@ namespace DesktopCalculator
                 Empty = false;
 
                 decimal o = System.Convert.ToDecimal(Ounces.Text);
-                Kilograms.Text = (o * 0.0283495m).ToString();
-                Grams.Text = (o * 28.3495m).ToString();
-                Miligrams.Text = (o * 28349.5m).ToString();
-                Pounds.Text = (o * 0.0625m).ToString();
+                Kilograms.Text = (o / 35.274m).ToString();
+                Grams.Text = (o * 28.35m).ToString();
+                Miligrams.Text = (o * 28349.523m).ToString();
+                Pounds.Text = (o / 16).ToString();
 
                 Empty = true;
             }

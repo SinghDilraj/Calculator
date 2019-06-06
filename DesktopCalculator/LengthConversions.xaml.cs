@@ -25,7 +25,7 @@ namespace DesktopCalculator
                 Centimeters.Text = (km * 100000).ToString();
                 Milimeters.Text = (km * 1000000).ToString();
                 Feet.Text = (km * 3280.84m).ToString();
-                Inches.Text = (km * 39370.08m).ToString();
+                Inches.Text = (km * 39370.079m).ToString();
 
                 Empty = true;
             }
@@ -34,11 +34,11 @@ namespace DesktopCalculator
                 Empty = false;
 
                 decimal m = System.Convert.ToDecimal(Meters.Text);
-                Kilometers.Text = (m * 0.001m).ToString();
+                Kilometers.Text = (m / 1000).ToString();
                 Centimeters.Text = (m * 100).ToString();
                 Milimeters.Text = (m * 1000).ToString();
-                Feet.Text = (m * 3.28084m).ToString();
-                Inches.Text = (m * 39.37008m).ToString();
+                Feet.Text = (m * 3.281m).ToString();
+                Inches.Text = (m * 39.37m).ToString();
 
                 Empty = true;
             }
@@ -47,11 +47,11 @@ namespace DesktopCalculator
                 Empty = false;
 
                 decimal cm = System.Convert.ToDecimal(Centimeters.Text);
-                Kilometers.Text = (cm * 0.00001m).ToString();
-                Meters.Text = (cm * 0.01m).ToString();
+                Kilometers.Text = (cm / 100000).ToString();
+                Meters.Text = (cm / 100).ToString();
                 Milimeters.Text = (cm * 10).ToString();
-                Feet.Text = (cm * 0.0328084m).ToString();
-                Inches.Text = (cm * 0.393701m).ToString();
+                Feet.Text = (cm * 30.48m).ToString();
+                Inches.Text = (cm * 2.54m).ToString();
 
                 Empty = true;
             }
@@ -60,11 +60,11 @@ namespace DesktopCalculator
                 Empty = false;
 
                 decimal mm = System.Convert.ToDecimal(Milimeters.Text);
-                Kilometers.Text = (mm * 0.000001m).ToString();
-                Meters.Text = (mm * 0.001m).ToString();
-                Centimeters.Text = (mm * 100).ToString();
-                Feet.Text = (mm * 3.28084m).ToString();
-                Inches.Text = (mm * 39.3701m).ToString();
+                Kilometers.Text = (mm / 1000000).ToString();
+                Meters.Text = (mm / 1000).ToString();
+                Centimeters.Text = (mm / 10).ToString();
+                Feet.Text = (mm / 304.8m).ToString();
+                Inches.Text = (mm / 25.4m).ToString();
 
                 Empty = true;
             }
@@ -73,8 +73,8 @@ namespace DesktopCalculator
                 Empty = false;
 
                 decimal f = System.Convert.ToDecimal(Feet.Text);
-                Kilometers.Text = (f * 0.0003048m).ToString();
-                Meters.Text = (f * 0.3048m).ToString();
+                Kilometers.Text = (f / 3280.84m).ToString();
+                Meters.Text = (f / 3.281m).ToString();
                 Centimeters.Text = (f * 30.48m).ToString();
                 Milimeters.Text = (f * 304.8m).ToString();
                 Inches.Text = (f * 12).ToString();
@@ -86,11 +86,11 @@ namespace DesktopCalculator
                 Empty = false;
 
                 decimal i = System.Convert.ToDecimal(Inches.Text);
-                Kilometers.Text = (i * 0.0000254m).ToString();
-                Meters.Text = (i * 0.0254m).ToString();
+                Kilometers.Text = (i / 39370.079m).ToString();
+                Meters.Text = (i / 39.37m).ToString();
                 Centimeters.Text = (i * 2.54m).ToString();
                 Milimeters.Text = (i * 25.4m).ToString();
-                Feet.Text = (i * 0.0833333m).ToString();
+                Feet.Text = (i / 12).ToString();
 
                 Empty = true;
             }

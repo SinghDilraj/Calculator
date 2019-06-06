@@ -56,6 +56,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DecimalPercentConversions.xaml.cs">
+      <DependentUpon>DecimalPercentConversions.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FileSizeConversions.xaml.cs">
       <DependentUpon>FileSizeConversions.xaml</DependentUpon>
     </Compile>
@@ -72,6 +75,10 @@
       <DependentUpon>WeightConversions.xaml</DependentUpon>
     </Compile>
     <Page Include="Conversions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DecimalPercentConversions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

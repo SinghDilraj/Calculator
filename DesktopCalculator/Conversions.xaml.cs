@@ -47,5 +47,11 @@ namespace DesktopCalculator
             TimeConversions TimeConversions = new TimeConversions();
             TimeConversions.Show();
         }
+
+        private void DecimalPercentConversions_Click(object sender, RoutedEventArgs e)
+        {
+            DecimalPercentConversions DecimalPercentConversions = new DecimalPercentConversions();
+            DecimalPercentConversions.Show();
+        }
     }
 }
