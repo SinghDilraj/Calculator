@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace DesktopCalculator
 {
@@ -22,6 +10,30 @@ namespace DesktopCalculator
         public Conversions()
         {
             InitializeComponent();
+        }
+
+        private void IntegerConversions_Click(object sender, RoutedEventArgs e)
+        {
+            IntegerConversions integerConversions = new IntegerConversions();
+            integerConversions.Show();
+        }
+
+        private void WeightConversions_Click(object sender, RoutedEventArgs e)
+        {
+            WeightConversions WeightConversions = new WeightConversions();
+            WeightConversions.Show();
+        }
+
+        private void TemperatureConversions_Click(object sender, RoutedEventArgs e)
+        {
+            TemperatureConversions TemperatureConversions = new TemperatureConversions();
+            TemperatureConversions.Show();
+        }
+
+        private void LengthConversions_Click(object sender, RoutedEventArgs e)
+        {
+            LengthConversions LengthConversions = new LengthConversions();
+            LengthConversions.Show();
         }
     }
 }

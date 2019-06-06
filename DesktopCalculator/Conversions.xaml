@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopCalculator"
         mc:Ignorable="d"
-        Title="Conversions" Height="417.5" Width="352.5">
+        Title="Conversions" Height="429.5" Width="352.5">
     <Grid>
         <Label Content="&#x9;&#x9;  CONVERSIONS" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="344" Background="#FF243027" Foreground="#FFF9F9F9" FontSize="14"/>
+        <Button x:Name="IntegerConversions" Content="Integer to hexadecimal, octal and binary." HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="324" Height="42" FontSize="16" Click="IntegerConversions_Click"/>
+        <Button x:Name="WeightConversions" Content="Weight conversion between milligrams,&#xD;&#xA; grams, kilograms, ounces and pounds." HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Width="324" Height="55" FontSize="16" Click="WeightConversions_Click"/>
+        <Button x:Name="TemperatureConversions" Content="Temperature conversion between celcius &#xD;&#xA; &#x9;     and fahrenheit." HorizontalAlignment="Left" Margin="10,137,0,0" VerticalAlignment="Top" Width="324" Height="47" FontSize="16" Click="TemperatureConversions_Click"/>
+        <Button x:Name="LengthConversions" Content="Length conversion between millimetres, &#xD;&#xA;       centimeters, meters, kilometers, &#xD;&#xA; &#x9;    inches and feet." HorizontalAlignment="Left" Margin="10,189,0,0" VerticalAlignment="Top" Width="324" Height="68" FontSize="16" Click="LengthConversions_Click"/>
 
     </Grid>
 </Window>

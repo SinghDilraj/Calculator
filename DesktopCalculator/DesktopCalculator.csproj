@@ -55,7 +55,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="LengthConversions.xaml.cs">
+      <DependentUpon>LengthConversions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TemperatureConversions.xaml.cs">
+      <DependentUpon>TemperatureConversions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WeightConversions.xaml.cs">
+      <DependentUpon>WeightConversions.xaml</DependentUpon>
+    </Compile>
     <Page Include="Conversions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IntegerConversions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LengthConversions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -70,10 +87,21 @@
     <Compile Include="Conversions.xaml.cs">
       <DependentUpon>Conversions.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IntegerConversions.xaml.cs">
+      <DependentUpon>IntegerConversions.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TemperatureConversions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WeightConversions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
