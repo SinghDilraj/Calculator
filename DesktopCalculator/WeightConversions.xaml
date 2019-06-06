@@ -19,6 +19,11 @@
         <TextBox x:Name="Miligrams" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" Margin="128,189,0,0" FontSize="18" TextChanged="Miligrams_TextChanged"/>
         <TextBox x:Name="Grams" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" Margin="128,124,0,0" FontSize="18" TextChanged="Grams_TextChanged"/>
         <Button x:Name="Convert"  Content="Convert" HorizontalAlignment="Left" Margin="128,360,0,0" VerticalAlignment="Top" Width="88" Height="29" FontSize="18" Background="#FF82E877" Click="Convert_Click"/>
+        <Label Content="kg" HorizontalAlignment="Left" Margin="221,59,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.175,-0.175" FontSize="18"/>
+        <Label Content="g" HorizontalAlignment="Left" Margin="221,124,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.175,-0.175" FontSize="18"/>
+        <Label Content="mg" HorizontalAlignment="Left" Margin="221,186,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.175,-0.175" FontSize="18"/>
+        <Label Content="lb" HorizontalAlignment="Left" Margin="221,254,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.175,-0.175" FontSize="18"/>
+        <Label Content="oz" HorizontalAlignment="Left" Margin="221,324,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.175,-0.175" FontSize="18"/>
 
     </Grid>
 </Window>
