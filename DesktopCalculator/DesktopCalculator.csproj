@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,16 +56,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FileSizeConversions.xaml.cs">
+      <DependentUpon>FileSizeConversions.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LengthConversions.xaml.cs">
       <DependentUpon>LengthConversions.xaml</DependentUpon>
     </Compile>
     <Compile Include="TemperatureConversions.xaml.cs">
       <DependentUpon>TemperatureConversions.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TimeConversions.xaml.cs">
+      <DependentUpon>TimeConversions.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WeightConversions.xaml.cs">
       <DependentUpon>WeightConversions.xaml</DependentUpon>
     </Compile>
     <Page Include="Conversions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FileSizeConversions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -95,6 +106,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="TemperatureConversions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TimeConversions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

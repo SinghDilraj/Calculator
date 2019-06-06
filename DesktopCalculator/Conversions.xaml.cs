@@ -35,5 +35,17 @@ namespace DesktopCalculator
             LengthConversions LengthConversions = new LengthConversions();
             LengthConversions.Show();
         }
+
+        private void FileSizeConversions_Click(object sender, RoutedEventArgs e)
+        {
+            FileSizeConversions FileSizeConversions = new FileSizeConversions();
+            FileSizeConversions.Show();
+        }
+
+        private void TimeConversions_Click(object sender, RoutedEventArgs e)
+        {
+            TimeConversions TimeConversions = new TimeConversions();
+            TimeConversions.Show();
+        }
     }
 }

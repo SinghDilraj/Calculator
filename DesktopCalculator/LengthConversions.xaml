@@ -12,13 +12,13 @@
         <Label Content="     Meters" HorizontalAlignment="Left" Margin="35,88,0,0" VerticalAlignment="Top" Width="114" FontSize="18"/>
         <Label Content="Centimeters" HorizontalAlignment="Left" Margin="35,137,0,0" VerticalAlignment="Top" Width="114" FontSize="18" RenderTransformOrigin="-0.161,-0.008"/>
         <Label Content=" Milimeters" HorizontalAlignment="Left" Margin="35,189,0,0" VerticalAlignment="Top" Width="114" FontSize="18"/>
-        <TextBox x:Name="Kilometers" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" Margin="187,38,0,0" FontSize="18"/>
-        <TextBox x:Name="Inches" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" Margin="187,270,0,0" FontSize="18"/>
-        <TextBox x:Name="Feet" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" Margin="187,228,0,0" FontSize="18"/>
-        <TextBox x:Name="Centimeters" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" Margin="187,137,0,0" FontSize="18"/>
-        <TextBox x:Name="Meters" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" Margin="187,88,0,0" FontSize="18"/>
+        <TextBox x:Name="Kilometers" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" Margin="187,38,0,0" FontSize="18" TextChanged="Kilometers_TextChanged"/>
+        <TextBox x:Name="Inches" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" Margin="187,270,0,0" FontSize="18" TextChanged="Inches_TextChanged"/>
+        <TextBox x:Name="Feet" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" Margin="187,228,0,0" FontSize="18" TextChanged="Feet_TextChanged"/>
+        <TextBox x:Name="Centimeters" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" Margin="187,137,0,0" FontSize="18" TextChanged="Centimeters_TextChanged"/>
+        <TextBox x:Name="Meters" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" Margin="187,88,0,0" FontSize="18" TextChanged="Meters_TextChanged"/>
         <Button x:Name="Convert"  Content="Convert" HorizontalAlignment="Left" Margin="120,332,0,0" VerticalAlignment="Top" Width="88" Height="29" FontSize="18" Background="#FF82E877" Click="Convert_Click"/>
-        <TextBox x:Name="Milimeters" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" Margin="187,182,0,0" FontSize="18"/>
+        <TextBox x:Name="Milimeters" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="88" Margin="187,182,0,0" FontSize="18" TextChanged="Milimeters_TextChanged"/>
         <Label Content="       Feet" HorizontalAlignment="Left" Margin="35,228,0,0" VerticalAlignment="Top" Width="114" FontSize="18"/>
         <Label Content="     Inches" HorizontalAlignment="Left" Margin="35,267,0,0" VerticalAlignment="Top" Width="114" FontSize="18"/>
     </Grid>
