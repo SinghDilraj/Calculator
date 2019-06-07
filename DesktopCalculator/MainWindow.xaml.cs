@@ -199,7 +199,11 @@ namespace DesktopCalculator
         {
             if (Result.Text.EndsWith("0") || Result.Text.EndsWith("1") || Result.Text.EndsWith("2") || Result.Text.EndsWith("3") || Result.Text.EndsWith("4") || Result.Text.EndsWith("5") || Result.Text.EndsWith("6") || Result.Text.EndsWith("7") || Result.Text.EndsWith("8") || Result.Text.EndsWith("9"))
             {
-                Result.Text += ".";
+                string[] numArr = Result.Text.Split(new char[] { '+', '-', '*', '/', '%' });
+                if (!numArr[numArr.Length - 1].Contains("."))
+                {
+                    Result.Text += ".";
+                }
             }
         }
 
