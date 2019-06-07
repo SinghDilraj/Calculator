@@ -139,13 +139,16 @@ namespace DesktopCalculator
 
         private void Factorial_Click(object sender, RoutedEventArgs e)
         {
-            BigInteger fact = 1;
-            for (int i = 1; i <= Convert.ToInt64(Result.Text); i++)
+            if (!string.IsNullOrEmpty(Result.Text))
             {
-                fact = fact * i;
-            }
+                BigInteger fact = 1;
+                for (int i = 1; i <= Convert.ToInt64(Result.Text); i++)
+                {
+                    fact = fact * i;
+                }
 
-            Result.Text = fact.ToString();
+                Result.Text = fact.ToString();
+            }
         }
 
         private void Minus_Click(object sender, RoutedEventArgs e)
